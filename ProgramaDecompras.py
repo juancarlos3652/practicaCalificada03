@@ -16,28 +16,43 @@ while True:
         lista_compras.append(producto)
         # Mostramos un mensaje de confirmación
         print(" ")
+        print("================================================================")
         print(f"Producto '{producto}' agregado a la lista de compras")
+        print("================================================================")
         print(" ")
     elif opcion == "2":
         # Verificamos si la lista de compras está vacía
         if len(lista_compras) == 0:
+            print(" ")
+            print("================================================================")
             print("La lista de compras está vacía")
+            print("================================================================")
             print(" ")
         else:
             # Eliminamos el primer producto de la lista
             producto_eliminado = lista_compras.pop(0)
             # Mostramos un mensaje de confirmación
+            print(" ")
+            print("================================================================")
             print(f"Producto '{producto_eliminado}' eliminado de la lista de compras")
+            print("================================================================")
             print(" ")
     elif opcion == "3":
         # Mostramos todos los productos de la lista
+        print(" ")
         print("Lista de compras:")
+        print("================================================================")
         for producto in lista_compras:
             print(producto)
+        print("================================================================")    
         print(" ")
     elif opcion == "4":
         # Salimos del bucle principal y del programa
+        print(" ")
+        print("================================================================")
         print("¡Hasta luego!")
+        print("================================================================")
+        print(" ")
         break
     else:
         # Opción no válida, mostramos un mensaje de error
